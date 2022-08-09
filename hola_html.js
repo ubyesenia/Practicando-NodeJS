@@ -12,6 +12,7 @@ http.createServer(function(req, res){
 //programación asíncrona
     http.createServer(function(req, res){
         fs.readFile("./index.html", function(err, html){
+            //console.log(html.toString());
             res.writeHead(200,{"Content-Type":"application/json"});//Enviando información de encabezado
             res.write(/*html*/JSON.stringify({nombre:"Yesenia", username:"Yese", color: "Azul"}));
             res.end();

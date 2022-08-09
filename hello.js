@@ -1,5 +1,5 @@
 var http = require("http");
-var manejador = function(request, response){
+var manejador = (request, response) => {//function(request, response){//probando otra notación de callbacks, arrow, ...
     console.log("Hola mundo")
     response.end("Hola mundo. Enviando respuesta al navegador")
 }

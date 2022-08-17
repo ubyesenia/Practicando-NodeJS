@@ -6,3 +6,5 @@ var manejador = (request, response) => {//function(request, response){//probando
 
 var servidor = http.createServer(manejador);
 servidor.listen(8080);
+
+console.log("Imprimiendo para prueba de commit directamente desde consola de Visual Studio");
